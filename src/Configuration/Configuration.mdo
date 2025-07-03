@@ -24,6 +24,7 @@
       <use>true</use>
     </functionality>
   </usedMobileApplicationFunctionalities>
+  <defaultStyle>Style.СероЗеленаяТема</defaultStyle>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
@@ -38,6 +39,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <styles>Style.СероЗеленаяТема</styles>
   <catalogs>Catalog.Должности</catalogs>
   <catalogs>Catalog.Проекты</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
