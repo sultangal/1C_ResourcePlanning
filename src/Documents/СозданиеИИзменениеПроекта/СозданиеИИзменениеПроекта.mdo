@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4380d17e-b2c9-4ac9-9e95-d1b9605e5c86">
+  <producedTypes>
+    <objectType typeId="6f741d18-7750-4d79-bcbf-748a4c22b04c" valueTypeId="bed8f289-2045-4c3d-ae6b-702235efdfde"/>
+    <refType typeId="eea68930-deb8-46f6-ae25-47cb1314c16e" valueTypeId="14eabb66-365b-4340-b58b-63a5575268ac"/>
+    <selectionType typeId="9bbe6538-901c-475f-becc-56d166cde9be" valueTypeId="48bdd2a3-4294-430a-8cf5-e5d84746399a"/>
+    <listType typeId="12167f13-81b5-4f77-9533-31cb67603f15" valueTypeId="b15d79ed-63d1-4d9f-8e60-2cf412f08845"/>
+    <managerType typeId="08a8a261-c02e-4992-936b-e053b6151103" valueTypeId="499cb03f-45b7-4eca-a093-c55d93f7065d"/>
+  </producedTypes>
+  <name>СозданиеИИзменениеПроекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание и изменение проекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СозданиеИИзменениеПроекта.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СозданиеИИзменениеПроекта.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ИсторияПроектов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="eb23c5c7-fbb3-41a8-9e67-04004011ba8b">
+    <name>НазваниеПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название проекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bc7ca177-dddd-468b-83cb-a30d26c2382a">
+    <name>РуководительПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель проекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3c27df72-055e-4178-a4ca-5ec912cab4cd">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b2ae8d05-de7c-42a7-9473-685fcee555c8">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a899b191-69ad-495f-b272-bbc69bfa4c30">
+    <name>ЗаписьВСправочникеПроекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись в справочнике проекты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="cd857fff-3cb8-4d3a-855f-ec7636fea3ac">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="dde4440f-b9db-427f-9f66-7472350464f5">
+    <producedTypes>
+      <objectType typeId="12e0a37d-4d43-407b-88a5-d5b1d54b02c9" valueTypeId="c1a3d49d-77e7-493b-8576-9456f9223038"/>
+      <rowType typeId="6f43cb67-b9e0-4c05-9f2a-5da4d430002d" valueTypeId="2dd3b929-dcc4-4625-ac17-198b098cca7c"/>
+    </producedTypes>
+    <name>КомандаПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команда проекта</value>
+    </synonym>
+    <attributes uuid="fa9cbcd6-fad6-4ac4-8a49-be936b72d41f">
+      <name>Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Должности</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d5239525-0492-4c20-ab1f-f491aa14be69">
+      <name>НеобходимыйПроцентЗанятостиНаПроекте</name>
+      <synonym>
+        <key>ru</key>
+        <value>Необходимый процент занятости на проекте</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e0252ece-08f7-469d-b7b4-69fb85807190">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

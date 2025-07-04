@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b4f0c02-db4a-4618-9a0a-d1ebd06b318b">
+  <producedTypes>
+    <selectionType typeId="55339b3e-9e72-4f3d-bd1e-633fcfe5561b" valueTypeId="0769aac7-ee13-4711-9dc2-c82dde6ed801"/>
+    <listType typeId="54479a1f-e30f-4433-973a-0a38c42be093" valueTypeId="eed2ac2c-5855-4dc5-aa6a-167e29685f7c"/>
+    <managerType typeId="4602d980-ebeb-42c3-83d9-57697ac98abe" valueTypeId="e5a3a5ad-198f-46a8-aadf-58d6e27215ab"/>
+    <recordSetType typeId="7b468817-68ae-4a41-9e3b-5c9ac10ca97b" valueTypeId="20d0643c-e3fe-4a3b-951f-43e87f30698c"/>
+    <recordKeyType typeId="d423c88f-e27a-484d-91db-d87c1120baec" valueTypeId="21bafe94-d3ef-4632-8dc0-bafb9266387d"/>
+    <recordType typeId="743620c7-a1af-403e-b9d1-1a156e8154ad" valueTypeId="d30c51c7-240c-4daf-bc26-3c2d97dd8eb3"/>
+    <recordManagerType typeId="5fc7b263-fdee-47b8-8b29-965515c2161a" valueTypeId="8209c511-6710-4f46-8be6-18acea991ae1"/>
+  </producedTypes>
+  <name>ИсторияПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>История проектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="0b1c6b5f-8f49-457d-ba54-76426f806a5d">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ca6bba1b-8b79-4a41-aeba-6d8395d590f8">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
