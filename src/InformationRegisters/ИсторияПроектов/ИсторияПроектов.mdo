@@ -125,6 +125,22 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <dimensions uuid="45d72556-0a59-45c2-9ba0-67ada0c8cee5">
+    <name>СтатусПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус проекта</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусПроекта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
   <forms uuid="38b0a05f-1abf-4b5c-b927-6ce66fe86272">
     <name>ФормаСписка</name>
     <synonym>
