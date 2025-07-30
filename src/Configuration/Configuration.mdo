@@ -44,6 +44,7 @@
   <catalogs>Catalog.Сотрудники</catalogs>
   <documents>Document.ГрафикОтпусков</documents>
   <documents>Document.Проекты</documents>
+  <enums>Enum.СтатусПроекта</enums>
   <dataProcessors>DataProcessor.Проекты</dataProcessors>
   <informationRegisters>InformationRegister.ГрафикОтпусков</informationRegisters>
   <informationRegisters>InformationRegister.ИсторияПроектов</informationRegisters>
