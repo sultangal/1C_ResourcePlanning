@@ -18,12 +18,16 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>График отпусков</value>
+  </objectPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <registerRecords>InformationRegister.ГрафикОтпусков</registerRecords>
+  <registerRecords>InformationRegister.ИсторияГрафикаОтпусков</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="2b28793d-ce12-4c8a-8091-3c63c82ab40e">
@@ -67,10 +71,10 @@
       <objectType typeId="43d3b0d6-a0be-431d-88fb-14fe24f4ed33" valueTypeId="23b2405e-9241-4564-b524-9d2a990830f1"/>
       <rowType typeId="59784151-a227-4e05-99dc-5966b124b860" valueTypeId="301c7054-dc94-4281-bcb8-d20da5ef76da"/>
     </producedTypes>
-    <name>ТабличнаяЧасть</name>
+    <name>СписокСотрудников</name>
     <synonym>
       <key>ru</key>
-      <value>Табличная часть</value>
+      <value>Список сотрудников</value>
     </synonym>
     <attributes uuid="2af54a29-072e-44d3-a9ff-76db9b9d564a">
       <name>Сотрудник</name>

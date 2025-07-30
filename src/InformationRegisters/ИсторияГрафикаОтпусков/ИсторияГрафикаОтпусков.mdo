@@ -9,16 +9,34 @@
     <recordType typeId="b6d694dc-b6be-470e-bd4c-43af7a8b9d43" valueTypeId="adc43ab9-d6f5-45eb-824e-04ccc71311c8"/>
     <recordManagerType typeId="1806cd72-f151-4c22-8d9b-d79921b1c6bc" valueTypeId="d56ab058-3ef5-4856-95fc-88034adca074"/>
   </producedTypes>
-  <name>ГрафикОтпусков</name>
+  <name>ИсторияГрафикаОтпусков</name>
   <synonym>
     <key>ru</key>
-    <value>График отпусков</value>
+    <value>История графика отпусков</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
   <writeMode>RecorderSubordinate</writeMode>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4a93274c-5a09-4664-a140-3e36f23fbefd">
+    <name>ДатаНачалаОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала отпуска</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <resources uuid="dcde71f3-d7bb-448a-a96d-aa2534c22980">
     <name>КоличествоДней</name>
     <synonym>
@@ -38,25 +56,7 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <attributes uuid="aae81c33-0dc5-48e1-8d77-7d2ae06aa6de">
-    <name>ДатаНачалаОтпуска</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата начала отпуска</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="b8a31e08-8a6e-42f5-becb-2ab5214cf394">
+  <dimensions uuid="16789fd8-6d38-48a2-b62e-e921de3a4038">
     <name>НачалоПериода</name>
     <synonym>
       <key>ru</key>
@@ -73,8 +73,8 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="ccde18c0-704d-42e7-a8fe-5c948070c581">
+  </dimensions>
+  <dimensions uuid="7c94ac3f-b92d-4da8-b352-201652ed2dca">
     <name>КонецПериода</name>
     <synonym>
       <key>ru</key>
@@ -91,7 +91,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-  </attributes>
+  </dimensions>
   <dimensions uuid="60756171-52e6-4506-9f7d-e99a3ac362f9">
     <name>Сотрудник</name>
     <synonym>
