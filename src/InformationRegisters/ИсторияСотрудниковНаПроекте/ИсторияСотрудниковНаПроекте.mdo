@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61f2d9a6-ab63-411b-9337-a1b83e960c91">
+  <producedTypes>
+    <selectionType typeId="87481161-e570-4231-8405-b8e169879046" valueTypeId="0cf1f4a8-d42b-4804-abdc-78944f37cdcd"/>
+    <listType typeId="064efcfc-cee5-4887-b4d1-06f1f0f51def" valueTypeId="5b670c5a-da32-4af3-b728-345e29f3b789"/>
+    <managerType typeId="82c66335-585a-44a7-929a-3daf28cb8232" valueTypeId="fb1ea1ca-e819-4fd8-a9cc-05eda15c344a"/>
+    <recordSetType typeId="ca7c4095-f7ef-4f7b-9ee5-4dc5f30cffbb" valueTypeId="547a215b-28f3-4fdd-aed6-2d664b653026"/>
+    <recordKeyType typeId="9a0247f0-8857-4e6c-85b9-81be41d0df9f" valueTypeId="d2717b83-a41d-4f9b-9d37-6b75be57a00a"/>
+    <recordType typeId="57d09087-ef20-4ae8-b92b-8a99490b2cb8" valueTypeId="a1a9ff0a-d8c1-46fd-a336-88d24c25e794"/>
+    <recordManagerType typeId="2e637d16-9b13-4aa3-b1f2-61ad47129cdd" valueTypeId="068be57e-d066-4fea-b387-0f7c5e980672"/>
+  </producedTypes>
+  <name>ИсторияСотрудниковНаПроекте</name>
+  <synonym>
+    <key>ru</key>
+    <value>История сотрудников на проекте</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>История сотрудников на проекте</value>
+  </recordPresentation>
+  <resources uuid="6e6afe30-79be-4e00-9a68-66b4aecc0f04">
+    <name>НеобходимыйПроцентЗанятостиНаПроекте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Необходимый процент занятости на проекте</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dee3a197-20b8-4ee8-9b84-29a901363d67">
+    <name>ИДЗаписиВИсторииПроектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИДЗаписи в истории проектов</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d6321870-2048-4f6a-b639-f10b638649bd">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2f5fbc1c-a89d-4509-8466-144d9a30248d">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

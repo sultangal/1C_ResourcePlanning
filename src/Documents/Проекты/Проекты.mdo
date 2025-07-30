@@ -7,13 +7,13 @@
     <listType typeId="12167f13-81b5-4f77-9533-31cb67603f15" valueTypeId="b15d79ed-63d1-4d9f-8e60-2cf412f08845"/>
     <managerType typeId="08a8a261-c02e-4992-936b-e053b6151103" valueTypeId="499cb03f-45b7-4eca-a093-c55d93f7065d"/>
   </producedTypes>
-  <name>СозданиеИИзменениеПроекта</name>
+  <name>Проекты</name>
   <synonym>
     <key>ru</key>
-    <value>Создание и изменение проекта</value>
+    <value>Проекты</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.СозданиеИИзменениеПроекта.StandardAttribute.Number</inputByString>
+  <inputByString>Document.Проекты.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -23,8 +23,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.СозданиеИИзменениеПроекта.Form.ФормаДокумента</defaultObjectForm>
-  <registerRecords>InformationRegister.ИсторияПроектов</registerRecords>
+  <defaultObjectForm>Document.Проекты.Form.ФормаДокумента</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="eb23c5c7-fbb3-41a8-9e67-04004011ba8b">
@@ -41,6 +40,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -95,21 +95,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="a899b191-69ad-495f-b272-bbc69bfa4c30">
-    <name>ЗаписьВСправочникеПроекты</name>
-    <synonym>
-      <key>ru</key>
-      <value>Запись в справочнике проекты</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Проекты</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

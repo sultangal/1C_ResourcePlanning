@@ -16,30 +16,34 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
-  <writeMode>RecorderSubordinate</writeMode>
+  <defaultListForm>InformationRegister.ИсторияПроектов.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <dimensions uuid="0b1c6b5f-8f49-457d-ba54-76426f806a5d">
-    <name>Проект</name>
+  <recordPresentation>
+    <key>ru</key>
+    <value>История проектов</value>
+  </recordPresentation>
+  <updateDataHistoryImmediatelyAfterWrite>true</updateDataHistoryImmediatelyAfterWrite>
+  <resources uuid="1a2a1c6b-2018-4b4c-b2dc-d53f2da31cc4">
+    <name>РуководительПроекта</name>
     <synonym>
       <key>ru</key>
-      <value>Проект</value>
+      <value>Руководитель проекта</value>
     </synonym>
     <type>
-      <types>CatalogRef.Проекты</types>
+      <types>CatalogRef.Сотрудники</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <mainFilter>true</mainFilter>
-  </dimensions>
-  <dimensions uuid="ca6bba1b-8b79-4a41-aeba-6d8395d590f8">
-    <name>ДатаИзменения</name>
+  </resources>
+  <resources uuid="1fdc0d4b-c3b7-4026-990f-12c5f38fe749">
+    <name>ДатаНачала</name>
     <synonym>
       <key>ru</key>
-      <value>Дата изменения</value>
+      <value>Дата начала</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -49,10 +53,85 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1c758179-1ff9-431c-b2d8-110ce790422c">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c45f277e-c542-4f4a-9da5-2f58e9e4afc4">
+    <name>НазваниеПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название проекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="62516676-8967-46b1-b563-87ecb9b6b832">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <dimensions uuid="7d6be3f3-8d1f-4564-b90a-113ad298b546">
+    <name>ИдентификаторЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор записи</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="38b0a05f-1abf-4b5c-b927-6ce66fe86272">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:InformationRegister>

@@ -41,11 +41,11 @@
   </languages>
   <styles>Style.СероЗеленаяТема</styles>
   <catalogs>Catalog.Должности</catalogs>
-  <catalogs>Catalog.Проекты</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <documents>Document.ГрафикОтпусков</documents>
-  <documents>Document.СозданиеИИзменениеПроекта</documents>
+  <documents>Document.Проекты</documents>
   <dataProcessors>DataProcessor.Проекты</dataProcessors>
   <informationRegisters>InformationRegister.ГрафикОтпусков</informationRegisters>
   <informationRegisters>InformationRegister.ИсторияПроектов</informationRegisters>
+  <informationRegisters>InformationRegister.ИсторияСотрудниковНаПроекте</informationRegisters>
 </mdclass:Configuration>

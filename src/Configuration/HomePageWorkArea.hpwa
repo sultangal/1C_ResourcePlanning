@@ -4,7 +4,7 @@
   <columns/>
   <columns>
     <items>
-      <form>DataProcessor.Проекты.Form.Форма</form>
+      <form>Document.Проекты.Form.ФормаДокумента</form>
       <height>10</height>
       <visibility>
         <common>true</common>
