@@ -109,6 +109,7 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.Сотрудники.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.Сотрудники.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Сотрудники.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="9ef378e2-ecb3-43a9-913f-b720b4feab40">
     <name>Должность</name>
     <synonym>
@@ -160,6 +161,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f8c05e72-2d1f-468e-af07-4ce249e92874">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

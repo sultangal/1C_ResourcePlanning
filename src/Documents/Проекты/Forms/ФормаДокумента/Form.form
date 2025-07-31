@@ -82,7 +82,7 @@
   </items>
   <items xsi:type="form:FormField">
     <name>РуководительПроекта</name>
-    <id>10</id>
+    <id>58</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -93,7 +93,7 @@
     </dataPath>
     <extendedTooltip>
       <name>РуководительПроектаРасширеннаяПодсказка</name>
-      <id>12</id>
+      <id>60</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -103,11 +103,11 @@
     </extendedTooltip>
     <contextMenu>
       <name>РуководительПроектаКонтекстноеМеню</name>
-      <id>11</id>
+      <id>59</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -119,9 +119,15 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <wrap>true</wrap>
+      <dropListButton>false</dropListButton>
+      <choiceButton>true</choiceButton>
+      <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+      <openButton>false</openButton>
+      <createButton>false</createButton>
       <chooseType>true</chooseType>
       <typeDomainEnabled>true</typeDomainEnabled>
       <textEdit>true</textEdit>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
