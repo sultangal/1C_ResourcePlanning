@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4cdfd30-ab73-4bff-8d9d-6d0d2b591f41">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4cdfd30-ab73-4bff-8d9d-6d0d2b591f41">
   <producedTypes>
     <objectType typeId="1117277d-36d8-4bef-842f-a6266838f6f7" valueTypeId="7785f411-f865-47da-b64d-fdf7b0f900cc"/>
     <refType typeId="87e5d4e2-eab8-43c8-a24f-5d73eef43dc8" valueTypeId="8aa53ee6-040f-437e-8d96-0a6f2a8aea0a"/>
@@ -28,6 +28,50 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f639d789-8411-484d-b49d-ac4af3a049aa">
+      <name>ДиректорПроектногоПодразделения</name>
+      <description>Директор проектного подразделения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="ec04df90-06e2-428f-8a8a-58408bd55692">
+      <name>РуководительПроекта</name>
+      <description>Руководитель проекта</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="539adc3e-a503-4d4d-8229-49d381064f57">
+      <name>ТехническийАрхитектор</name>
+      <description>Технический архитектор</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="c05e3628-76f6-449c-91f9-37574ccee93c">
+      <name>ФункциональныйАрхитектор</name>
+      <description>Функциональный архитектор</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="1efcd4d6-5b5d-4015-8991-ccab7983204b">
+      <name>Консультант</name>
+      <description>Консультант</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="bafc12f8-9dc0-4c27-bfe0-b1004c878bdb">
+      <name>Программист</name>
+      <description>Программист</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.Должности.Form.ФормаЭлемента</defaultObjectForm>
