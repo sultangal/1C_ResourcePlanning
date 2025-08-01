@@ -436,14 +436,23 @@
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
         <handlers>
-          <event>ChoiceProcessing</event>
-          <name>КомандаПроектаСотрудникОбработкаВыбора</name>
+          <event>StartChoice</event>
+          <name>КомандаПроектаСотрудникНачалоВыбора</name>
         </handlers>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
+        <dropListButton>false</dropListButton>
+        <choiceButton>true</choiceButton>
+        <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+        <clearButton>false</clearButton>
+        <spinButton>false</spinButton>
+        <openButton>false</openButton>
+        <createButton>false</createButton>
+        <quickChoice>false</quickChoice>
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
+        <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
