@@ -74,6 +74,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
+      <readOnly>true</readOnly>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -86,6 +87,10 @@
     <items xsi:type="form:FormField">
       <name>Дата</name>
       <id>22</id>
+      <title>
+        <key>ru</key>
+        <value>Дата создания</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -110,6 +115,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
+      <readOnly>true</readOnly>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -146,6 +152,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
+      <readOnly>true</readOnly>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -182,6 +189,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
+      <readOnly>true</readOnly>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -218,6 +226,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
+      <readOnly>true</readOnly>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -254,6 +263,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>LabelField</type>
+      <readOnly>true</readOnly>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -290,6 +300,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
+      <readOnly>true</readOnly>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
