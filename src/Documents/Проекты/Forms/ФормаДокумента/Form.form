@@ -321,6 +321,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
+      <warningOnEditRepresentation>DontShow</warningOnEditRepresentation>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -330,15 +331,35 @@
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
         <dropListButton>true</dropListButton>
-        <choiceButton>true</choiceButton>
+        <choiceButton>false</choiceButton>
         <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
         <clearButton>false</clearButton>
         <spinButton>false</spinButton>
         <openButton>false</openButton>
         <createButton>false</createButton>
+        <listChoiceMode>true</listChoiceMode>
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.Должности.ТехническийАрхитектор</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.Должности.ФункциональныйАрхитектор</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.Должности.Консультант</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.Должности.Программист</value>
+          </value>
+        </choiceList>
         <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
       </extInfo>
     </items>
@@ -423,7 +444,6 @@
         <wrap>true</wrap>
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -453,6 +473,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>CheckBoxField</type>
+      <readOnly>true</readOnly>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
