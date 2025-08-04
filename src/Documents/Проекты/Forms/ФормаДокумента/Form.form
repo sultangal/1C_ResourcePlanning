@@ -305,6 +305,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.КомандаПроекта.Должность</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>КомандаПроектаДолжностьПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>КомандаПроектаДолжностьРасширеннаяПодсказка</name>
         <id>40</id>
