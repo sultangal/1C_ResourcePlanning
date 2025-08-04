@@ -414,6 +414,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.КомандаПроекта.Сотрудник</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>КомандаПроектаСотрудникПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>КомандаПроектаСотрудникРасширеннаяПодсказка</name>
         <id>46</id>
@@ -757,6 +761,46 @@
         </edit>
       </columns>
     </additionalColumns>
+  </attributes>
+  <attributes>
+    <name>ГрафикОтпусковНачалоПериода</name>
+    <title>
+      <key>ru</key>
+      <value>График отпусков начало периода</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ГрафикОтпусковКонецПериода</name>
+    <title>
+      <key>ru</key>
+      <value>График отпусков конец периода</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <commandInterface>
     <navigationPanel/>

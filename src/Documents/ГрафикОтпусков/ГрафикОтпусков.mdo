@@ -27,6 +27,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>InformationRegister.ИсторияГрафикаОтпусков</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
@@ -66,6 +67,15 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="b979c26a-b4bd-43b2-8cf3-975c3ca2b732">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="fc5184b9-c904-4aae-abab-d5a8e86a4454">
     <producedTypes>
       <objectType typeId="43d3b0d6-a0be-431d-88fb-14fe24f4ed33" valueTypeId="23b2405e-9241-4564-b524-9d2a990830f1"/>
