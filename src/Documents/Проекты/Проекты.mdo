@@ -30,6 +30,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.Проекты.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.Проекты.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.СотрудникиНаПроектах</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="eb23c5c7-fbb3-41a8-9e67-04004011ba8b">
@@ -139,6 +140,93 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="6543c3b9-40da-4c09-a8b5-133cc28431e7">
+    <name>ФормаВыбораИнтервала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора интервала</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="9682e6d1-c602-4196-9a8e-644324c9fc59">
+    <producedTypes>
+      <objectType typeId="73a83234-8733-4409-a04a-7eab2f209090" valueTypeId="d0e582e5-c352-4ee5-b80b-06d190dfe565"/>
+      <rowType typeId="1db94825-fbd3-4baa-8478-4a0cce139a1e" valueTypeId="b744b070-ae4e-4839-8ef9-1d59add20b76"/>
+    </producedTypes>
+    <name>ИнтервалыЗанятостиСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервалы занятости сотрудников</value>
+    </synonym>
+    <attributes uuid="84253d24-f64a-4c1e-a66d-ca593d86f16d">
+      <name>ИД</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИД</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7953e4ea-7194-4b3a-8f29-b766db7d3ccb">
+      <name>НачалоИнтервала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало интервала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="37a7b45f-354a-4f63-bab9-65a1dd00c70d">
+      <name>КонецИнтервала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Конец интервала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fe40cc7c-5631-44dd-942f-63d9d6fac741">
+      <name>ПроцентЗанятости</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент занятости</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
   <tabularSections uuid="dde4440f-b9db-427f-9f66-7472350464f5">
     <producedTypes>
       <objectType typeId="12e0a37d-4d43-407b-88a5-d5b1d54b02c9" valueTypeId="c1a3d49d-77e7-493b-8576-9456f9223038"/>
@@ -149,6 +237,20 @@
       <key>ru</key>
       <value>Команда проекта</value>
     </synonym>
+    <attributes uuid="4404b6eb-9001-4b00-bb24-ade98de02f09">
+      <name>ИД</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИД</value>
+      </synonym>
+      <type>
+        <types>UUID</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
     <attributes uuid="fa9cbcd6-fad6-4ac4-8a49-be936b72d41f">
       <name>Должность</name>
       <synonym>

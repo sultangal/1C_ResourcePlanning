@@ -143,6 +143,7 @@
       <style>Solid</style>
     </multiStageLinkLine>
     <multiStageLinkColor xsi:type="core:ColorDef"/>
+    <animation>DontUse</animation>
     <valuesAxis>
       <interval>
         <leftIsNum>true</leftIsNum>

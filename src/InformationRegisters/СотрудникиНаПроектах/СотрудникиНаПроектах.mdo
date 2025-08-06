@@ -9,25 +9,25 @@
     <recordType typeId="57d09087-ef20-4ae8-b92b-8a99490b2cb8" valueTypeId="a1a9ff0a-d8c1-46fd-a336-88d24c25e794"/>
     <recordManagerType typeId="2e637d16-9b13-4aa3-b1f2-61ad47129cdd" valueTypeId="068be57e-d066-4fea-b387-0f7c5e980672"/>
   </producedTypes>
-  <name>ИсторияСотрудниковНаПроекте</name>
+  <name>СотрудникиНаПроектах</name>
   <synonym>
     <key>ru</key>
-    <value>История сотрудников на проекте</value>
+    <value>Сотрудники на проектах</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
-  <defaultListForm>InformationRegister.ИсторияСотрудниковНаПроекте.Form.ФормаСписка</defaultListForm>
   <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
   <dataLockControlMode>Managed</dataLockControlMode>
   <recordPresentation>
     <key>ru</key>
     <value>История сотрудников на проекте</value>
   </recordPresentation>
-  <resources uuid="6e6afe30-79be-4e00-9a68-66b4aecc0f04">
-    <name>НеобходимыйПроцентЗанятостиНаПроекте</name>
+  <resources uuid="fb91cd30-9f54-44b7-87c1-d086e47a7ae7">
+    <name>ПроцентЗанятостиВИнтервале</name>
     <synonym>
       <key>ru</key>
-      <value>Необходимый процент занятости на проекте</value>
+      <value>Процент занятости в интервале</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -54,22 +54,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <mainFilter>true</mainFilter>
-  </dimensions>
-  <dimensions uuid="dee3a197-20b8-4ee8-9b84-29a901363d67">
-    <name>ИДЗаписиВИсторииПроектов</name>
-    <synonym>
-      <key>ru</key>
-      <value>ИДЗаписи в истории проектов</value>
-    </synonym>
-    <type>
-      <types>UUID</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
@@ -105,13 +89,40 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </dimensions>
-  <forms uuid="af3c78cc-3f0c-4588-9675-62c6beab9abe">
-    <name>ФормаСписка</name>
+  <dimensions uuid="16c2f8e6-0aa6-4468-ab91-ac896dd2d880">
+    <name>ИнтервалЗанятостиКонец</name>
     <synonym>
       <key>ru</key>
-      <value>Форма списка</value>
+      <value>Интервал занятости конец</value>
     </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="0f1ad06f-634d-4846-9dc9-fecfe4deb0cd">
+    <name>ИнтервалЗанятостиНачало</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал занятости начало</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
 </mdclass:InformationRegister>

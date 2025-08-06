@@ -48,5 +48,5 @@
   <dataProcessors>DataProcessor.Проекты</dataProcessors>
   <informationRegisters>InformationRegister.ИсторияГрафикаОтпусков</informationRegisters>
   <informationRegisters>InformationRegister.ИсторияПроектов</informationRegisters>
-  <informationRegisters>InformationRegister.ИсторияСотрудниковНаПроекте</informationRegisters>
+  <informationRegisters>InformationRegister.СотрудникиНаПроектах</informationRegisters>
 </mdclass:Configuration>
