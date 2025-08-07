@@ -85,20 +85,16 @@
     </extInfo>
   </items>
   <items xsi:type="form:Button">
-    <name>СохранитьЗначения</name>
-    <id>7</id>
-    <title>
-      <key>ru</key>
-      <value>Сохранить</value>
-    </title>
+    <name>Сохранить</name>
+    <id>15</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <extendedTooltip>
-      <name>СохранитьЗначенияРасширеннаяПодсказка</name>
-      <id>8</id>
+      <name>СохранитьРасширеннаяПодсказка</name>
+      <id>16</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -107,7 +103,7 @@
       </extInfo>
     </extendedTooltip>
     <type>UsualButton</type>
-    <commandName>Form.StandardCommand.SaveValues</commandName>
+    <commandName>Form.Command.Сохранить</commandName>
     <representation>Auto</representation>
     <autoMaxWidth>true</autoMaxWidth>
     <autoMaxHeight>true</autoMaxHeight>
@@ -172,6 +168,23 @@
       <common>true</common>
     </edit>
   </attributes>
+  <formCommands>
+    <name>Сохранить</name>
+    <title>
+      <key>ru</key>
+      <value>Сохранить</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Сохранить</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
   <parameters>
     <name>ИнтервалПарам</name>
     <valueType>
