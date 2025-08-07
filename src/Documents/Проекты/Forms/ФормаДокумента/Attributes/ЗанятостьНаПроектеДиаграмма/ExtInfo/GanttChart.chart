@@ -285,7 +285,7 @@
       <color>Style.FormTextColor</color>
     </textColor>
   </timeScale>
-  <keepScaleVariant>Period</keepScaleVariant>
+  <keepScaleVariant>Auto</keepScaleVariant>
   <fixedVariantMeasure>Month</fixedVariantMeasure>
   <fixedVariantInterval>1</fixedVariantInterval>
   <autoFullInterval>true</autoFullInterval>

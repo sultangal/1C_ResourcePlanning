@@ -470,6 +470,10 @@
       <autoFill>true</autoFill>
     </autoCommandBar>
     <handlers>
+      <event>BeforeDeleteRow</event>
+      <name>КомандаПроектаПередУдалением</name>
+    </handlers>
+    <handlers>
       <event>OnActivateRow</event>
       <name>КомандаПроектаПриАктивизацииСтроки</name>
     </handlers>
@@ -807,6 +811,10 @@
       <event>OnStartEdit</event>
       <name>ИнтервалыЗанятостиСотрудниковПриНачалеРедактирования</name>
     </handlers>
+    <handlers>
+      <event>AfterDeleteRow</event>
+      <name>ИнтервалыЗанятостиСотрудниковПослеУдаления</name>
+    </handlers>
     <searchStringAddition>
       <name>ИнтервалыЗанятостиСотрудниковСтрокаПоиска</name>
       <id>185</id>
@@ -947,25 +955,23 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>GanttChartField</type>
+    <readOnly>true</readOnly>
     <warningOnEditRepresentation>DontShow</warningOnEditRepresentation>
     <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:GanttChartFieldExtInfo">
-      <handlers>
-        <event>Selection</event>
-        <name>ЗанятостьНаПроектеДиаграммаВыбор</name>
-      </handlers>
       <autoTable>
         <name>ЗанятостьНаПроектеТаблица</name>
         <id>69</id>
         <visible>true</visible>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <titleLocation>None</titleLocation>
+        <commandBarLocation>Bottom</commandBarLocation>
         <autoCommandBar>
           <name>ЗанятостьНаПроектеТаблицаКоманднаяПанель</name>
           <id>70</id>
@@ -1062,15 +1068,13 @@
           <autoFill>true</autoFill>
         </contextMenu>
         <representation>Tree</representation>
-        <changeRowSet>true</changeRowSet>
-        <changeRowOrder>true</changeRowOrder>
         <autoMaxWidth>true</autoMaxWidth>
         <height>10</height>
         <autoMaxHeight>true</autoMaxHeight>
         <heightControlVariant>InFormRows</heightControlVariant>
         <autoMaxRowsCount>true</autoMaxRowsCount>
-        <choiceMode>true</choiceMode>
         <selectionMode>MultiRow</selectionMode>
+        <rowSelectionMode>Row</rowSelectionMode>
         <header>true</header>
         <headerHeight>1</headerHeight>
         <footerHeight>1</footerHeight>
@@ -1188,7 +1192,6 @@
     <edit>
       <common>true</common>
     </edit>
-    <savedData>true</savedData>
     <extInfo xsi:type="form:GanttChartExtInfo"/>
   </attributes>
   <commandInterface>
