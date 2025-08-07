@@ -470,6 +470,10 @@
       <autoFill>true</autoFill>
     </autoCommandBar>
     <handlers>
+      <event>OnActivateRow</event>
+      <name>КомандаПроектаПриАктивизацииСтроки</name>
+    </handlers>
+    <handlers>
       <event>OnStartEdit</event>
       <name>КомандаПроектаПриНачалеРедактирования</name>
     </handlers>
@@ -799,6 +803,10 @@
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
+    <handlers>
+      <event>OnStartEdit</event>
+      <name>ИнтервалыЗанятостиСотрудниковПриНачалеРедактирования</name>
+    </handlers>
     <searchStringAddition>
       <name>ИнтервалыЗанятостиСотрудниковСтрокаПоиска</name>
       <id>185</id>
