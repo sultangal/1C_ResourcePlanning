@@ -21,6 +21,10 @@
             <segments>Объект.ДатаНачала</segments>
           </dataPath>
           <titleLocation>Top</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ДатаНачалаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ДатаНачалаРасширеннаяПодсказка</name>
             <id>15</id>
@@ -62,6 +66,10 @@
             <segments>Объект.ДатаОкончания</segments>
           </dataPath>
           <titleLocation>Top</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ДатаОкончанияПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ДатаОкончанияРасширеннаяПодсказка</name>
             <id>18</id>
@@ -370,42 +378,6 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>КомандаПроектаИД</name>
-          <id>209</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.КомандаПроекта.ИД</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>КомандаПроектаИДРасширеннаяПодсказка</name>
-            <id>211</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>КомандаПроектаИДКонтекстноеМеню</name>
-            <id>210</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
           <name>КомандаПроектаДолжность</name>
           <id>38</id>
           <visible>true</visible>
@@ -681,42 +653,6 @@
         </dataPath>
         <titleLocation>Top</titleLocation>
         <items xsi:type="form:FormField">
-          <name>ИнтервалыЗанятостиСотрудниковИД</name>
-          <id>197</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ИнтервалыЗанятостиСотрудников.ИД</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>ИнтервалыЗанятостиСотрудниковИДРасширеннаяПодсказка</name>
-            <id>199</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>ИнтервалыЗанятостиСотрудниковИДКонтекстноеМеню</name>
-            <id>198</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
           <name>ИнтервалыЗанятостиСотрудниковНачалоИнтервала</name>
           <id>200</id>
           <visible>true</visible>
@@ -847,7 +783,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <horizontalAlign>Left</horizontalAlign>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -855,9 +791,50 @@
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
+            <editFormat>
+              <key>ru</key>
+              <value>ЧФ=Ч%</value>
+            </editFormat>
+            <listChoiceMode>true</listChoiceMode>
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>25%</value>
+              </presentation>
+              <value xsi:type="core:NumberValue">
+                <value>25</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>50%</value>
+              </presentation>
+              <value xsi:type="core:NumberValue">
+                <value>50</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>75%</value>
+              </presentation>
+              <value xsi:type="core:NumberValue">
+                <value>75</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>100%</value>
+              </presentation>
+              <value xsi:type="core:NumberValue">
+                <value>100</value>
+              </value>
+            </choiceList>
+            <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
           </extInfo>
         </items>
         <autoCommandBar>
