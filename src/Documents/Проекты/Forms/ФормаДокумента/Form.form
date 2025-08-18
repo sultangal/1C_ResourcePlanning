@@ -727,6 +727,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.ИнтервалыЗанятостиСотрудников.НачалоИнтервала</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ИнтервалыЗанятостиСотрудниковНачалоИнтервалаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ИнтервалыЗанятостиСотрудниковНачалоИнтервалаРасширеннаяПодсказка</name>
             <id>202</id>
@@ -767,6 +771,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.ИнтервалыЗанятостиСотрудников.КонецИнтервала</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ИнтервалыЗанятостиСотрудниковКонецИнтервалаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ИнтервалыЗанятостиСотрудниковКонецИнтервалаРасширеннаяПодсказка</name>
             <id>205</id>
@@ -849,6 +857,10 @@
         <handlers>
           <event>AfterDeleteRow</event>
           <name>ИнтервалыЗанятостиСотрудниковПослеУдаления</name>
+        </handlers>
+        <handlers>
+          <event>OnChange</event>
+          <name>ИнтервалыЗанятостиСотрудниковПриИзменении</name>
         </handlers>
         <searchStringAddition>
           <name>ИнтервалыЗанятостиСотрудниковСтрокаПоиска</name>
