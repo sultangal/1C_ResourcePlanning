@@ -358,42 +358,6 @@
         </dataPath>
         <titleLocation>Top</titleLocation>
         <items xsi:type="form:FormField">
-          <name>КомандаПроектаИД</name>
-          <id>224</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.КомандаПроекта.ИД</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>КомандаПроектаИДРасширеннаяПодсказка</name>
-            <id>226</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>КомандаПроектаИДКонтекстноеМеню</name>
-            <id>225</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
           <name>КомандаПроектаНомерСтроки</name>
           <id>35</id>
           <visible>true</visible>
@@ -573,8 +537,16 @@
           <name>КомандаПроектаПриАктивизацииСтроки</name>
         </handlers>
         <handlers>
+          <event>OnActivateField</event>
+          <name>КомандаПроектаПриАктивизацииПоля</name>
+        </handlers>
+        <handlers>
           <event>OnStartEdit</event>
           <name>КомандаПроектаПриНачалеРедактирования</name>
+        </handlers>
+        <handlers>
+          <event>OnActivateCell</event>
+          <name>КомандаПроектаПриАктивизацииЯчейки</name>
         </handlers>
         <handlers>
           <event>OnChange</event>
@@ -704,42 +676,6 @@
           <segments>Объект.ИнтервалыЗанятостиСотрудников</segments>
         </dataPath>
         <titleLocation>Top</titleLocation>
-        <items xsi:type="form:FormField">
-          <name>ИнтервалыЗанятостиСотрудниковИД</name>
-          <id>227</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ИнтервалыЗанятостиСотрудников.ИД</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>ИнтервалыЗанятостиСотрудниковИДРасширеннаяПодсказка</name>
-            <id>229</id>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>ИнтервалыЗанятостиСотрудниковИДКонтекстноеМеню</name>
-            <id>228</id>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-          </extInfo>
-        </items>
         <items xsi:type="form:FormField">
           <name>ИнтервалыЗанятостиСотрудниковНачалоИнтервала</name>
           <id>200</id>
@@ -931,6 +867,10 @@
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
+        <handlers>
+          <event>OnActivateRow</event>
+          <name>ИнтервалыЗанятостиСотрудниковПриАктивизацииСтроки</name>
+        </handlers>
         <handlers>
           <event>OnStartEdit</event>
           <name>ИнтервалыЗанятостиСотрудниковПриНачалеРедактирования</name>
