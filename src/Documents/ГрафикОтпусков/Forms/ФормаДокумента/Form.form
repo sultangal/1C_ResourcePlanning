@@ -204,6 +204,14 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>EditTextChange</event>
+          <name>СписокСотрудниковДатаНачалаОтпускаИзменениеТекстаРедактирования</name>
+        </handlers>
+        <handlers>
+          <event>StartChoice</event>
+          <name>СписокСотрудниковДатаНачалаОтпускаНачалоВыбора</name>
+        </handlers>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
@@ -248,6 +256,14 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>EditTextChange</event>
+          <name>СписокСотрудниковДатаОкончанияОтпускаИзменениеТекстаРедактирования</name>
+        </handlers>
+        <handlers>
+          <event>StartChoice</event>
+          <name>СписокСотрудниковДатаОкончанияОтпускаНачалоВыбора</name>
+        </handlers>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
