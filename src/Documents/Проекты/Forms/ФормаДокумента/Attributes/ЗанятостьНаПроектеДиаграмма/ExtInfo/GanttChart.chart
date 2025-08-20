@@ -46,6 +46,7 @@
     <chBorderColor xsi:type="core:ColorRef">
       <color>Style.BorderColor</color>
     </chBorderColor>
+    <transparent>true</transparent>
     <bkgColor xsi:type="core:ColorRef">
       <color>Style.FieldBackColor</color>
     </bkgColor>
@@ -311,4 +312,5 @@
     <width>1</width>
     <style>Solid</style>
   </linksLine>
+  <intervalTextRepresentation>Show</intervalTextRepresentation>
 </ganttchart:GanttChart>

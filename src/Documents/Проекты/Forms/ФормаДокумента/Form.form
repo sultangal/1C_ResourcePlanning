@@ -1441,6 +1441,7 @@
         <rowSelectionMode>Row</rowSelectionMode>
         <header>true</header>
         <headerHeight>1</headerHeight>
+        <footer>true</footer>
         <footerHeight>1</footerHeight>
         <horizontalScrollBar>AutoUse</horizontalScrollBar>
         <horizontalLines>true</horizontalLines>
