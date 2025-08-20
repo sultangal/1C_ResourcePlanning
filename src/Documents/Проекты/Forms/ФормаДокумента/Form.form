@@ -861,6 +861,39 @@
             <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
           </extInfo>
         </items>
+        <items xsi:type="form:FormField">
+          <name>ИнтервалыЗанятостиСотрудниковПризнакПересеченияСОтпуском</name>
+          <id>230</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ИнтервалыЗанятостиСотрудников.ПризнакПересеченияСОтпуском</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ИнтервалыЗанятостиСотрудниковПризнакПересеченияСОтпускомРасширеннаяПодсказка</name>
+            <id>232</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ИнтервалыЗанятостиСотрудниковПризнакПересеченияСОтпускомКонтекстноеМеню</name>
+            <id>231</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>EnterOnInput</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
         <autoCommandBar>
           <name>ИнтервалыЗанятостиСотрудниковКоманднаяПанель</name>
           <id>182</id>
