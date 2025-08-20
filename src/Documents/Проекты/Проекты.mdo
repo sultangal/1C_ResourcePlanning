@@ -140,15 +140,6 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="6543c3b9-40da-4c09-a8b5-133cc28431e7">
-    <name>ФормаВыбораИнтервала</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора интервала</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <tabularSections uuid="9682e6d1-c602-4196-9a8e-644324c9fc59">
     <producedTypes>
       <objectType typeId="73a83234-8733-4409-a04a-7eab2f209090" valueTypeId="d0e582e5-c352-4ee5-b80b-06d190dfe565"/>

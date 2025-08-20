@@ -86,25 +86,28 @@
       <key>ru</key>
       <value>Список сотрудников</value>
     </synonym>
-    <attributes uuid="2af54a29-072e-44d3-a9ff-76db9b9d564a">
-      <name>Сотрудник</name>
+    <attributes uuid="2aae08a4-bc1b-47c0-a1be-85851c7e35bd">
+      <name>ДатаНачалаОтпуска</name>
       <synonym>
         <key>ru</key>
-        <value>Сотрудник</value>
+        <value>Дата начала отпуска</value>
       </synonym>
       <type>
-        <types>CatalogRef.Сотрудники</types>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="2aae08a4-bc1b-47c0-a1be-85851c7e35bd">
-      <name>ДатаНачалаОтпуска</name>
+    <attributes uuid="b34a129b-86e0-41ef-9b5a-c11d0f77d92a">
+      <name>ДатаОкончанияОтпуска</name>
       <synonym>
         <key>ru</key>
-        <value>Дата начала отпуска</value>
+        <value>Дата окончания отпуска</value>
       </synonym>
       <type>
         <types>Date</types>
@@ -128,6 +131,20 @@
         <numberQualifiers>
           <precision>4</precision>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2af54a29-072e-44d3-a9ff-76db9b9d564a">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

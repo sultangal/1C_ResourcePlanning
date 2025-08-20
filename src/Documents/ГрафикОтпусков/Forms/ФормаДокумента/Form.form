@@ -179,6 +179,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.СписокСотрудников.ДатаНачалаОтпуска</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>СписокСотрудниковДатаНачалаОтпускаПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>СписокСотрудниковДатаНачалаОтпускаРасширеннаяПодсказка</name>
         <id>31</id>
@@ -192,6 +196,50 @@
       <contextMenu>
         <name>СписокСотрудниковДатаНачалаОтпускаКонтекстноеМеню</name>
         <id>30</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СписокСотрудниковДатаОкончанияОтпуска</name>
+      <id>47</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.СписокСотрудников.ДатаОкончанияОтпуска</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>СписокСотрудниковДатаОкончанияОтпускаПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>СписокСотрудниковДатаОкончанияОтпускаРасширеннаяПодсказка</name>
+        <id>49</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокСотрудниковДатаОкончанияОтпускаКонтекстноеМеню</name>
+        <id>48</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -235,6 +283,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
+      <readOnly>true</readOnly>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -255,6 +304,7 @@
       <autoFill>true</autoFill>
     </autoCommandBar>
     <searchStringAddition>
+      <enabled>false</enabled>
       <name>СписокСотрудниковСтрокаПоиска</name>
       <id>14</id>
       <extendedTooltip>
@@ -278,6 +328,7 @@
       </extInfo>
     </searchStringAddition>
     <viewStatusAddition>
+      <enabled>false</enabled>
       <name>СписокСотрудниковСостояниеПросмотра</name>
       <id>17</id>
       <extendedTooltip>
@@ -302,6 +353,7 @@
       </extInfo>
     </viewStatusAddition>
     <searchControlAddition>
+      <enabled>false</enabled>
       <name>СписокСотрудниковУправлениеПоиском</name>
       <id>20</id>
       <extendedTooltip>
