@@ -286,27 +286,10 @@
       <value>Стадии проекта</value>
     </synonym>
     <attributes uuid="25bb6080-dbb1-4166-918b-2efdb72e4f85">
-      <name>НачалоИнтервалаСтадии</name>
+      <name>НачалоСтадии</name>
       <synonym>
         <key>ru</key>
-        <value>Начало интервала стадии</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="be3b046a-60db-4f54-92ea-781981a6de5d">
-      <name>КонецИнтервалаСтадии</name>
-      <synonym>
-        <key>ru</key>
-        <value>Конец интервала стадии</value>
+        <value>Начало стадии</value>
       </synonym>
       <type>
         <types>Date</types>

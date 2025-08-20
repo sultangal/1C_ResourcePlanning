@@ -47,4 +47,11 @@
       <value>Завершен</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="eef1def2-d6e1-486b-b9a4-448b9105c695">
+    <name>Приостановлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приостановлен</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
