@@ -31,6 +31,7 @@
   <defaultObjectForm>Document.Проекты.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.Проекты.Form.ФормаСписка</defaultListForm>
   <registerRecords>InformationRegister.СотрудникиНаПроектах</registerRecords>
+  <registerRecords>InformationRegister.РегистрПроектов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="eb23c5c7-fbb3-41a8-9e67-04004011ba8b">
@@ -98,22 +99,6 @@
       <dateQualifiers>
         <dateFractions>Date</dateFractions>
       </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="5fdb5034-f790-49f0-bb73-0e11709ca396">
-    <name>СтатусПроекта</name>
-    <synonym>
-      <key>ru</key>
-      <value>Статус проекта</value>
-    </synonym>
-    <type>
-      <types>EnumRef.СтатусПроекта</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -282,6 +267,66 @@
       </synonym>
       <type>
         <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <tabularSections uuid="9564a74b-62d3-4546-a9ce-f251a417d11d">
+    <producedTypes>
+      <objectType typeId="71666faf-e026-4cd6-b5f6-82a723e29ad2" valueTypeId="1eee7e1f-e362-4a28-b056-dc347783d034"/>
+      <rowType typeId="3f4a4ad8-2887-40ba-8c9b-647d848c0c27" valueTypeId="fde68935-09cd-4019-8409-1779d3c159f5"/>
+    </producedTypes>
+    <name>СтадииПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стадии проекта</value>
+    </synonym>
+    <attributes uuid="25bb6080-dbb1-4166-918b-2efdb72e4f85">
+      <name>НачалоИнтервалаСтадии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало интервала стадии</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="be3b046a-60db-4f54-92ea-781981a6de5d">
+      <name>КонецИнтервалаСтадии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Конец интервала стадии</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2e3faa30-9244-4fd8-b697-a83ab513f3dc">
+      <name>Стадия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стадия</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СтадииПроекта</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

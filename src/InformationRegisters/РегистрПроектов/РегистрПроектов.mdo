@@ -9,15 +9,16 @@
     <recordType typeId="743620c7-a1af-403e-b9d1-1a156e8154ad" valueTypeId="d30c51c7-240c-4daf-bc26-3c2d97dd8eb3"/>
     <recordManagerType typeId="5fc7b263-fdee-47b8-8b29-965515c2161a" valueTypeId="8209c511-6710-4f46-8be6-18acea991ae1"/>
   </producedTypes>
-  <name>ИсторияПроектов</name>
+  <name>РегистрПроектов</name>
   <synonym>
     <key>ru</key>
-    <value>История проектов</value>
+    <value>Регистр проектов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
-  <defaultListForm>InformationRegister.ИсторияПроектов.Form.ФормаСписка</defaultListForm>
+  <defaultListForm>InformationRegister.РегистрПроектов.Form.ФормаСписка</defaultListForm>
   <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
   <dataLockControlMode>Managed</dataLockControlMode>
   <recordPresentation>
     <key>ru</key>
@@ -132,7 +133,7 @@
       <value>Статус проекта</value>
     </synonym>
     <type>
-      <types>EnumRef.СтатусПроекта</types>
+      <types>EnumRef.СтадииПроекта</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

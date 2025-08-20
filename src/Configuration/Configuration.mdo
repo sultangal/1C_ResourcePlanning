@@ -44,9 +44,9 @@
   <catalogs>Catalog.Сотрудники</catalogs>
   <documents>Document.ГрафикОтпусков</documents>
   <documents>Document.Проекты</documents>
-  <enums>Enum.СтатусПроекта</enums>
+  <enums>Enum.СтадииПроекта</enums>
   <dataProcessors>DataProcessor.Проекты</dataProcessors>
   <informationRegisters>InformationRegister.ИсторияГрафикаОтпусков</informationRegisters>
-  <informationRegisters>InformationRegister.ИсторияПроектов</informationRegisters>
+  <informationRegisters>InformationRegister.РегистрПроектов</informationRegisters>
   <informationRegisters>InformationRegister.СотрудникиНаПроектах</informationRegisters>
 </mdclass:Configuration>

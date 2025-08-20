@@ -79,7 +79,7 @@
       <value>Статус проекта</value>
     </synonym>
     <type>
-      <types>EnumRef.СтатусПроекта</types>
+      <types>EnumRef.СтадииПроекта</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

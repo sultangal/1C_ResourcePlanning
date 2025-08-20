@@ -5,10 +5,10 @@
     <listType typeId="f1c07658-820c-4190-9564-00da9614180a" valueTypeId="d1c10616-7819-4fb3-8231-3c4162319385"/>
     <managerType typeId="71cf304d-905d-4b53-8116-ae235458bf98" valueTypeId="1b64d8b1-3bd7-4a52-9fe0-5fc2de806e82"/>
   </producedTypes>
-  <name>СтатусПроекта</name>
+  <name>СтадииПроекта</name>
   <synonym>
     <key>ru</key>
-    <value>Статус проекта</value>
+    <value>Стадии проекта</value>
   </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
