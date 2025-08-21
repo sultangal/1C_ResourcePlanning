@@ -450,6 +450,10 @@
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
+        <handlers>
+          <event>OnChange</event>
+          <name>СтадииПроектаПриИзменении</name>
+        </handlers>
         <searchStringAddition>
           <name>СтадииПроектаСтрокаПоиска</name>
           <id>237</id>
