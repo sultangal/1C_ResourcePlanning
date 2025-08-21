@@ -1524,6 +1524,68 @@
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <savedData>true</savedData>
+    <additionalColumns>
+      <tablePath xsi:type="form:DataPath">
+        <segments>Объект.ИнтервалыЗанятостиСотрудников</segments>
+      </tablePath>
+      <columns>
+        <name>ПризнакПересеченияСОтпуском</name>
+        <title>
+          <key>ru</key>
+          <value>Признак пересечения с отпуском</value>
+        </title>
+        <id>15</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОтпускНачало</name>
+        <title>
+          <key>ru</key>
+          <value>Отпуск начало</value>
+        </title>
+        <id>16</id>
+        <valueType>
+          <types>Date</types>
+          <dateQualifiers>
+            <dateFractions>Date</dateFractions>
+          </dateQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+      <columns>
+        <name>ОтпускКонец</name>
+        <title>
+          <key>ru</key>
+          <value>Отпуск конец</value>
+        </title>
+        <id>17</id>
+        <valueType>
+          <types>Date</types>
+          <dateQualifiers>
+            <dateFractions>Date</dateFractions>
+          </dateQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+    </additionalColumns>
   </attributes>
   <attributes>
     <name>ГрафикОтпусковНачалоПериода</name>
