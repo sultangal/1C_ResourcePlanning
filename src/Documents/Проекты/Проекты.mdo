@@ -135,6 +135,41 @@
       <key>ru</key>
       <value>Интервалы занятости сотрудников</value>
     </synonym>
+    <attributes uuid="b99fa2a4-ddb1-4ed9-b50e-d2d1aec43d99">
+      <name>ДопИнформ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доп информ</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="37a7b45f-354a-4f63-bab9-65a1dd00c70d">
+      <name>КонецИнтервала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Конец интервала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
     <attributes uuid="84253d24-f64a-4c1e-a66d-ca593d86f16d">
       <name>ИД</name>
       <synonym>
@@ -149,29 +184,25 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="e172a4c2-eff1-4458-a69f-219848921aa2">
+      <name>ПризнакПересеченияСОтпуском</name>
+      <synonym>
+        <key>ru</key>
+        <value>Признак пересечения с отпуском</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
     <attributes uuid="7953e4ea-7194-4b3a-8f29-b766db7d3ccb">
       <name>НачалоИнтервала</name>
       <synonym>
         <key>ru</key>
         <value>Начало интервала</value>
-      </synonym>
-      <type>
-        <types>Date</types>
-        <dateQualifiers>
-          <dateFractions>Date</dateFractions>
-        </dateQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="37a7b45f-354a-4f63-bab9-65a1dd00c70d">
-      <name>КонецИнтервала</name>
-      <synonym>
-        <key>ru</key>
-        <value>Конец интервала</value>
       </synonym>
       <type>
         <types>Date</types>
@@ -201,20 +232,6 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="e172a4c2-eff1-4458-a69f-219848921aa2">
-      <name>ПризнакПересеченияСОтпуском</name>
-      <synonym>
-        <key>ru</key>
-        <value>Признак пересечения с отпуском</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
