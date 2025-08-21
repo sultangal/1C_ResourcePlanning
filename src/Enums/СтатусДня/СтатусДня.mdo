@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57fe6388-aeb9-4281-a165-38d54ebcd061">
+  <producedTypes>
+    <refType typeId="3ac5f7d1-620d-4587-95ce-f131c109f8e5" valueTypeId="db297193-01aa-444b-8707-2a60d2e88487"/>
+    <listType typeId="491d6b14-2c67-49f5-bda6-561896958ca6" valueTypeId="ffc501a2-bfc8-4a4f-977b-4d7012d88f7c"/>
+    <managerType typeId="03b6ef8a-2a4b-412c-96d4-b9530ece3a70" valueTypeId="c070cd50-9875-48a3-94b5-b0f8e6f0ca4a"/>
+  </producedTypes>
+  <name>СтатусДня</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус дня</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fdfbfad9-4135-4aaa-9ff6-23f656056a2f">
+    <name>Рабочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="06849b7e-605a-4567-baf3-2f04c0ae0677">
+    <name>Нерабочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нерабочий</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

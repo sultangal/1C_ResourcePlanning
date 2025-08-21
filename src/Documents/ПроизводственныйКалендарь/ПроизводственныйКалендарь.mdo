@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7f0c585-d247-46e7-8644-e589b8d76550">
+  <producedTypes>
+    <objectType typeId="60fdfe51-d087-424d-a585-2dc03484eb21" valueTypeId="bdf5a9ef-a546-41f7-88b0-7a2d4677d7f0"/>
+    <refType typeId="10d69c86-83bf-4df2-97bf-884659d4879e" valueTypeId="f2d7d135-3fde-468c-9be0-8d74a7f8de7c"/>
+    <selectionType typeId="5281c891-b2d0-4621-a4da-7297888d37ad" valueTypeId="b0d99696-c3b1-4f94-a80c-7305de9d879a"/>
+    <listType typeId="f69d231c-a929-4ed6-a0fb-970f2371cb32" valueTypeId="884e60f2-4462-47fa-9e0e-147ee4029875"/>
+    <managerType typeId="826c2cea-785d-4098-9359-f986d2857da9" valueTypeId="54d25687-6130-4179-90f6-b73c610576d4"/>
+  </producedTypes>
+  <name>ПроизводственныйКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производственный календарь</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПроизводственныйКалендарь.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПроизводственныйКалендарь.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="a9894583-941b-4cda-816d-365c4da65fe8">
+    <name>Календарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ea884e2c-fe28-461b-9337-c234459387ff">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="183c2fc0-177c-4443-a81e-bf05c9f542fc">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="e6553449-c1ac-4e13-9077-d19419a85af7">
+    <producedTypes>
+      <objectType typeId="773f6fbe-947f-4e71-aee1-e63fad116762" valueTypeId="419fc051-8b7d-438e-b471-43926e9099ed"/>
+      <rowType typeId="c8ee2cff-2a09-4ef9-aa7d-2013ee764973" valueTypeId="482206ca-88f5-4e96-8673-dafbb5d5c84f"/>
+    </producedTypes>
+    <name>ТаблицаИзмененийКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица изменений календаря</value>
+    </synonym>
+    <attributes uuid="9ed061dd-91e8-4d8a-9432-b34e840b583a">
+      <name>Дата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f4719a88-4683-44c3-8be2-3a58de69f35c">
+      <name>СтатусДня</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус дня</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СтатусДня</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>
