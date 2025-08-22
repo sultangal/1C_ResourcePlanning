@@ -76,6 +76,26 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.Должности.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.Должности.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="55ddff05-e9b1-4c5a-be1a-649b7622160b">
+    <name>СредняяСтавкаВСутки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средняя ставка в сутки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="3c3f112d-9710-4a5b-bc40-d1741d56c062">
     <name>ФормаСписка</name>
     <synonym>
