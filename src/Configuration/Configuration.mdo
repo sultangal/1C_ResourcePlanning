@@ -47,7 +47,6 @@
   <documents>Document.ПроизводственныйКалендарь</documents>
   <enums>Enum.СтадииПроекта</enums>
   <enums>Enum.СтатусДня</enums>
-  <dataProcessors>DataProcessor.Проекты</dataProcessors>
   <informationRegisters>InformationRegister.ИсторияГрафикаОтпусков</informationRegisters>
   <informationRegisters>InformationRegister.РегистрПроектов</informationRegisters>
   <informationRegisters>InformationRegister.СотрудникиНаПроектах</informationRegisters>

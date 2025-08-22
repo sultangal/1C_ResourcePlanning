@@ -12,7 +12,6 @@
     <key>ru</key>
     <value>Проекты</value>
   </synonym>
-  <comment>Документ, представляющий проект</comment>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.Проекты.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
