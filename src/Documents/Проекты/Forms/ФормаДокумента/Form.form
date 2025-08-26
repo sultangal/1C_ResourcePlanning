@@ -572,6 +572,10 @@
           <autoFill>true</autoFill>
         </autoCommandBar>
         <handlers>
+          <event>BeforeDeleteRow</event>
+          <name>СтадииПроектаПередУдалением</name>
+        </handlers>
+        <handlers>
           <event>OnChange</event>
           <name>СтадииПроектаПриИзменении</name>
         </handlers>
