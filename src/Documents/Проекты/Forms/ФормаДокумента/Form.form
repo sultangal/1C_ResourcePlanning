@@ -292,11 +292,11 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>ЗатратыНаПроект</name>
+          <name>ОбщиеЗатраты</name>
           <id>272</id>
           <title>
             <key>ru</key>
-            <value>Затраты</value>
+            <value>Общие затраты</value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -304,14 +304,14 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>ЗатратыНаПроект</segments>
+            <segments>ОбщиеЗатраты</segments>
           </dataPath>
           <toolTip>
             <key>ru</key>
             <value>Затраты рассчитываются исходя из средней ставки должности каждого члена команды и количества отработанных дней на проекте минус выходные и праздничные дни.</value>
           </toolTip>
           <extendedTooltip>
-            <name>ЗатратыНаПроектРасширеннаяПодсказка</name>
+            <name>ОбщиеЗатратыРасширеннаяПодсказка</name>
             <id>274</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
@@ -321,8 +321,57 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ЗатратыНаПроектКонтекстноеМеню</name>
+            <name>ОбщиеЗатратыКонтекстноеМеню</name>
             <id>273</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <readOnly>true</readOnly>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ЗатратыНаТекущийДень</name>
+          <id>281</id>
+          <title>
+            <key>ru</key>
+            <value>Затраты на текущий день</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ЗатратыНаТекущийДень</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Затраты рассчитываются исходя из средней ставки должности каждого члена команды и количества отработанных дней на проекте минус выходные и праздничные дни.</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ЗатратыНаТекущийДеньРасширеннаяПодсказка</name>
+            <id>283</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ЗатратыНаТекущийДеньКонтекстноеМеню</name>
+            <id>282</id>
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
@@ -1768,10 +1817,10 @@
     </edit>
   </attributes>
   <attributes>
-    <name>ЗатратыНаПроект</name>
+    <name>ОбщиеЗатраты</name>
     <title>
       <key>ru</key>
-      <value>Затраты на проект</value>
+      <value>Общие затраты</value>
     </title>
     <id>18</id>
     <valueType>
@@ -1781,6 +1830,24 @@
         <scale>2</scale>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЗатратыНаТекущийДень</name>
+    <title>
+      <key>ru</key>
+      <value>Затраты на текущий день</value>
+    </title>
+    <id>19</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
     </valueType>
     <view>
       <common>true</common>

@@ -32,6 +32,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПроизводственныйКалендарь.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.РегистрПроизводственногоКалендаря</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="a9894583-941b-4cda-816d-365c4da65fe8">

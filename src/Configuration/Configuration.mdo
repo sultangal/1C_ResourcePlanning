@@ -49,5 +49,6 @@
   <enums>Enum.СтатусДня</enums>
   <informationRegisters>InformationRegister.ИсторияГрафикаОтпусков</informationRegisters>
   <informationRegisters>InformationRegister.РегистрПроектов</informationRegisters>
+  <informationRegisters>InformationRegister.РегистрПроизводственногоКалендаря</informationRegisters>
   <informationRegisters>InformationRegister.СотрудникиНаПроектах</informationRegisters>
 </mdclass:Configuration>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f21c30f-239a-4406-bcb3-d45d8c12a846">
+  <producedTypes>
+    <selectionType typeId="b822ed8b-4503-47e0-981c-1d1deebce53d" valueTypeId="92368f1c-47c3-456a-83dd-527aafba5536"/>
+    <listType typeId="ddda8d3c-3bc1-4059-85c7-f8003ec0bc78" valueTypeId="7aa313b7-1b2e-4d35-beb5-9326b100a2ab"/>
+    <managerType typeId="1f42d534-d716-4d47-a4ce-586f696d617b" valueTypeId="a6a9f1d4-8fff-4c64-adc6-d070eaf94e5a"/>
+    <recordSetType typeId="ec8bb112-3cc3-4e2d-8d47-c77375900d37" valueTypeId="3b882283-170d-4674-91f5-05fbd144395a"/>
+    <recordKeyType typeId="88eb7c87-f289-4408-94eb-e3bd4240a9cc" valueTypeId="b2d07bd1-9264-482d-8013-73c35fba0a5a"/>
+    <recordType typeId="5df33907-12e8-479c-a226-748fdff40847" valueTypeId="d988a72e-3d80-4c53-ae48-9bcc73ee4a78"/>
+    <recordManagerType typeId="a7eab9e0-20d3-4e72-81a3-19614882df75" valueTypeId="a2547ac4-290e-46f5-9765-bda399fd21b3"/>
+  </producedTypes>
+  <name>РегистрПроизводственногоКалендаря</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистр производственного календаря</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="0a30f0d3-f754-4f16-a9f2-6bff4e045804">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="29ec14c2-c741-4428-aec9-e2c43c1f53c7">
+    <name>ДатаИзмененияКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения календаря</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="24273f64-37d1-4778-a647-ac95a8a28a3c">
+    <name>СтатусДня</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус дня</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусДня</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>
